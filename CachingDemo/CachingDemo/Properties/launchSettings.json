@@ -1,0 +1,22 @@
+{
+  "profiles": {
+    "CachingDemo": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "search?name=test",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true,
+      "applicationUrl": "https://localhost:7220;http://localhost:5220"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/search?name=test",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  },
+  "$schema": "https://json.schemastore.org/launchsettings.json"
+}

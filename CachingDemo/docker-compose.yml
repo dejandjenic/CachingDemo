@@ -1,0 +1,16 @@
+version: '2.1'
+services:
+  redis:
+    image: myredis
+  api:
+    image: api
+    depends_on:
+      - redis
+  api2:
+    image: api
+    depends_on:
+      - redis
+  yarp:
+    image: yarp
+    ports:
+      - "8002:80"
